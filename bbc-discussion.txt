@@ -1,0 +1,17 @@
+As we can see on the graph "bbc-distribution", the fives classes are well balanced. The average number of elements 
+in each classes is 445. The biggest difference between this average number and the true distributions is for the 
+class "entertainment" with 386 elements. This number represent a difference of 59 files which represent 15%. 
+This percentage is acceptable. Therefore, the most accurate metrics for this task is the macro-average metrics.
+
+To sum up the performances we have the following accuracy and macro-average F1-score for each models :
+Model 1 : Accuracy : 0.9662921348314607; F1-score = 0.9655734727345386
+Model 2 : Accuracy : 0.9662921348314607; F1-score = 0.9655734727345386
+Model 3 : Accuracy : 0.9707865168539326; F1-score = 0.9703103610418674
+Model 4 : Accuracy : 0.9662921348314607; F1-score = 0.9655734727345386
+We can see that the models 1, 2 and 3 have the exact same performances. This result is logical for the first two
+models as they are the same. But, I don't understand why we don't see even a slight difference with the last model.
+For the first two models, the smoothing value is set to the default one, so 1. As a smoothing value of 0.9 is 
+close to 1, the model should't outperform the default model, but we should see at least a small difference. 
+We can still say that the model using a smoothing value of 0.0001 (model 3) has better performances than the three
+others. This model is 0.5% more accurate, which is not a lot. To have better performances, we should then use other
+classifiers.

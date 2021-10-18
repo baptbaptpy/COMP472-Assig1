@@ -1,0 +1,268 @@
+
+
+
+-------------- multinomial Naive Bayes Classifier, first try --------------
+
+b) Confusion matrix
+axis : x-> Predicted labels; y-> True labels
+
+|bus|ent|pol|spo|tec|
+---------------------
+|96 |0  |2  |0  |4  |bus
+|2  |79 |1  |0  |2  |ent
+|1  |1  |76 |0  |0  |pol
+|1  |0  |0  |102|0  |spo
+|0  |1  |0  |0  |77 |tec
+
+c) Precision, recall, and F1-measure
+
+             | precision |  recall  | f1-score |
+business     |0.96       |0.941176  |0.950495  |
+entertainment|0.975308   |0.940476  |0.957575  |
+politics     |0.962025   |0.974358  |0.968152  |
+sport        |1.0        |0.990291  |0.995121  |
+tech         |0.927710   |0.987179  |0.956521  |
+
+
+d) Accuracy, macro-average F1 and weighted-average F1 of the model
+Accuracy                  : 0.9662921348314607
+Macro-average F1-score    : 0.9655734727345386
+Weighted-average F1-score : 0.966312446922542
+
+
+e) Prior probability
+business     :0.2292134831460674
+entertainment:0.18876404494382024
+politics     :0.1752808988764045
+sport        :0.23146067415730337
+tech         :0.1752808988764045
+
+f) Size of the vocabulary
+Size of vocabulary : 29421
+
+g) Number of word-tokens in each class
+business     :164663
+entertainment:124893
+politics     :185208
+sport        :162953
+tech         :198640
+
+h) Number of word-tokens in the entire corpus
+Total number of word in the entire corpus : 836357
+
+i) Number and percentage of words with a frequency of zero in each class
+
+|  bus  |  ent  |  pol  |  spo  |  tec  |
+----------------------------------------
+|164663 |124893 |185208 |162953 |198640 |Number of word in class
+|17538  |17746  |18201  |18850  |17323  |Number of word with a frequency of zero in each class
+|10.650%|14.208%|9.8273%|11.567%|8.7208%|Percentage of word with a frequency of zero
+
+j) Number and percentage of words with a frequency of one in the entire corpus
+Number of word appearing one time in the entire corpus : 10975
+Percentage of word appearing one time in the entire corpus : 37.303286767954866
+
+k) 2 favorite words
+word n°1 : 'artificial'-> 2853 occurences (log_prob:-5.680684483193309)
+word n°2 : 'intelligence'-> 14232 occurences (log_prob:-4.073562605061138)
+
+
+
+-------------- multinomial Naive Bayes Classifier, second try --------------
+
+b) Confusion matrix
+axis : x-> Predicted labels; y-> True labels
+
+|bus|ent|pol|spo|tec|
+---------------------
+|96 |0  |2  |0  |4  |bus
+|2  |79 |1  |0  |2  |ent
+|1  |1  |76 |0  |0  |pol
+|1  |0  |0  |102|0  |spo
+|0  |1  |0  |0  |77 |tec
+
+c) Precision, recall, and F1-measure
+
+             | precision |  recall  | f1-score |
+business     |0.96       |0.941176  |0.950495  |
+entertainment|0.975308   |0.940476  |0.957575  |
+politics     |0.962025   |0.974358  |0.968152  |
+sport        |1.0        |0.990291  |0.995121  |
+tech         |0.927710   |0.987179  |0.956521  |
+
+
+d) Accuracy, macro-average F1 and weighted-average F1 of the model
+Accuracy                  : 0.9662921348314607
+Macro-average F1-score    : 0.9655734727345386
+Weighted-average F1-score : 0.966312446922542
+
+
+e) Prior probability
+business     :0.2292134831460674
+entertainment:0.18876404494382024
+politics     :0.1752808988764045
+sport        :0.23146067415730337
+tech         :0.1752808988764045
+
+f) Size of the vocabulary
+Size of vocabulary : 29421
+
+g) Number of word-tokens in each class
+business     :164663
+entertainment:124893
+politics     :185208
+sport        :162953
+tech         :198640
+
+h) Number of word-tokens in the entire corpus
+Total number of word in the entire corpus : 836357
+
+i) Number and percentage of words with a frequency of zero in each class
+
+|  bus  |  ent  |  pol  |  spo  |  tec  |
+----------------------------------------
+|164663 |124893 |185208 |162953 |198640 |Number of word in class
+|17538  |17746  |18201  |18850  |17323  |Number of word with a frequency of zero in each class
+|10.650%|14.208%|9.8273%|11.567%|8.7208%|Percentage of word with a frequency of zero
+
+j) Number and percentage of words with a frequency of one in the entire corpus
+Number of word appearing one time in the entire corpus : 10975
+Percentage of word appearing one time in the entire corpus : 37.303286767954866
+
+k) 2 favorite words
+word n°1 : 'is'-> 14510 occurences (log_prob:-4.054217488528575)
+word n°2 : 'computer'-> 6496 occurences (log_prob:-4.857868952565295)
+
+
+
+-------------- multinomial Naive Bayes Classifier, smoothing value=0.0001 --------------
+
+b) Confusion matrix
+axis : x-> Predicted labels; y-> True labels
+
+|bus|ent|pol|spo|tec|
+---------------------
+|96 |0  |1  |0  |5  |bus
+|1  |80 |1  |0  |2  |ent
+|1  |0  |77 |0  |0  |pol
+|1  |0  |0  |102|0  |spo
+|0  |1  |0  |0  |77 |tec
+
+c) Precision, recall, and F1-measure
+
+             | precision |  recall  | f1-score |
+business     |0.969696   |0.941176  |0.955223  |
+entertainment|0.987654   |0.952380  |0.969696  |
+politics     |0.974683   |0.987179  |0.980891  |
+sport        |1.0        |0.990291  |0.995121  |
+tech         |0.916666   |0.987179  |0.950617  |
+
+
+d) Accuracy, macro-average F1 and weighted-average F1 of the model
+Accuracy                  : 0.9707865168539326
+Macro-average F1-score    : 0.9703103610418674
+Weighted-average F1-score : 0.9708823472793848
+
+
+e) Prior probability
+business     :0.2292134831460674
+entertainment:0.18876404494382024
+politics     :0.1752808988764045
+sport        :0.23146067415730337
+tech         :0.1752808988764045
+
+f) Size of the vocabulary
+Size of vocabulary : 29421
+
+g) Number of word-tokens in each class
+business     :164663
+entertainment:124893
+politics     :185208
+sport        :162953
+tech         :198640
+
+h) Number of word-tokens in the entire corpus
+Total number of word in the entire corpus : 836357
+
+i) Number and percentage of words with a frequency of zero in each class
+
+|  bus  |  ent  |  pol  |  spo  |  tec  |
+----------------------------------------
+|164663 |124893 |185208 |162953 |198640 |Number of word in class
+|17538  |17746  |18201  |18850  |17323  |Number of word with a frequency of zero in each class
+|10.650%|14.208%|9.8273%|11.567%|8.7208%|Percentage of word with a frequency of zero
+
+j) Number and percentage of words with a frequency of one in the entire corpus
+Number of word appearing one time in the entire corpus : 10975
+Percentage of word appearing one time in the entire corpus : 37.303286767954866
+
+k) 2 favorite words
+word n°1 : 'machine'-> 16398 occurences (log_prob:-3.931896179250686)
+word n°2 : 'learning'-> 15695 occurences (log_prob:-3.9757133651307552)
+
+
+
+-------------- multinomial Naive Bayes Classifier, smoothing value=0.9 --------------
+
+b) Confusion matrix
+axis : x-> Predicted labels; y-> True labels
+
+|bus|ent|pol|spo|tec|
+---------------------
+|96 |0  |2  |0  |4  |bus
+|2  |79 |1  |0  |2  |ent
+|1  |1  |76 |0  |0  |pol
+|1  |0  |0  |102|0  |spo
+|0  |1  |0  |0  |77 |tec
+
+c) Precision, recall, and F1-measure
+
+             | precision |  recall  | f1-score |
+business     |0.96       |0.941176  |0.950495  |
+entertainment|0.975308   |0.940476  |0.957575  |
+politics     |0.962025   |0.974358  |0.968152  |
+sport        |1.0        |0.990291  |0.995121  |
+tech         |0.927710   |0.987179  |0.956521  |
+
+
+d) Accuracy, macro-average F1 and weighted-average F1 of the model
+Accuracy                  : 0.9662921348314607
+Macro-average F1-score    : 0.9655734727345386
+Weighted-average F1-score : 0.966312446922542
+
+
+e) Prior probability
+business     :0.2292134831460674
+entertainment:0.18876404494382024
+politics     :0.1752808988764045
+sport        :0.23146067415730337
+tech         :0.1752808988764045
+
+f) Size of the vocabulary
+Size of vocabulary : 29421
+
+g) Number of word-tokens in each class
+business     :164663
+entertainment:124893
+politics     :185208
+sport        :162953
+tech         :198640
+
+h) Number of word-tokens in the entire corpus
+Total number of word in the entire corpus : 836357
+
+i) Number and percentage of words with a frequency of zero in each class
+
+|  bus  |  ent  |  pol  |  spo  |  tec  |
+----------------------------------------
+|164663 |124893 |185208 |162953 |198640 |Number of word in class
+|17538  |17746  |18201  |18850  |17323  |Number of word with a frequency of zero in each class
+|10.650%|14.208%|9.8273%|11.567%|8.7208%|Percentage of word with a frequency of zero
+
+j) Number and percentage of words with a frequency of one in the entire corpus
+Number of word appearing one time in the entire corpus : 10975
+Percentage of word appearing one time in the entire corpus : 37.303286767954866
+
+k) 2 favorite words
+word n°1 : 'money'-> 17652 occurences (log_prob:-3.858206464017371)
+word n°2 : 'table'-> 26012 occurences (log_prob:-3.4704975854177667)
