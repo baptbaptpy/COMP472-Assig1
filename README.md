@@ -6,5 +6,7 @@ by Baptiste Lemaire, id : 40216482
 
 
 
-You can find the folder the two Notebook I made. There is one for each part of the assigment.
+You can find the folder the two Notebooks I made. There is one for each part of the assigment.
 You can also find the required files in this folder.
+
+The two notebooks have sections with the corresponding question number.
