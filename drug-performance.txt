@@ -1,0 +1,213 @@
+
+
+
+---------------- Gaussian Naive Bayes Classifier ----------------
+
+b) Confusion matrix
+axis : x-> Predicted labels; y-> True labels
+
+|drA|drB|drC|drX|drY|
+---------------------
+|3  |1  |0  |0  |4  |drA
+|2  |5  |0  |0  |0  |drB
+|0  |0  |1  |2  |1  |drC
+|0  |0  |0  |6  |3  |drX
+|1  |0  |0  |3  |18 |drY
+
+c) Precision, recall, and F1-measure
+
+             | precision |  recall  | f1-score |
+drugA        |0.5        |0.375     |0.428571  |
+drugB        |0.833333   |0.714285  |0.769230  |
+drugC        |1.0        |0.25      |0.4       |
+drugX        |0.545454   |0.666666  |0.6       |
+drugY        |0.692307   |0.818181  |0.750000  |
+
+
+d) Accuracy, macro-average F1 and weighted-average F1 of the model
+Accuracy                  : 0.66
+Macro-average F1-score    : 0.5895604395604396
+Weighted-average F1-score : 0.6462637362637363
+
+
+
+
+---------------- Decision tree Classifier ----------------
+
+b) Confusion matrix
+axis : x-> Predicted labels; y-> True labels
+
+|drA|drB|drC|drX|drY|
+---------------------
+|8  |0  |0  |0  |0  |drA
+|0  |7  |0  |0  |0  |drB
+|0  |0  |4  |0  |0  |drC
+|0  |0  |0  |9  |0  |drX
+|0  |0  |0  |0  |22 |drY
+
+c) Precision, recall, and F1-measure
+
+             | precision |  recall  | f1-score |
+drugA        |1.0        |1.0       |1.0       |
+drugB        |1.0        |1.0       |1.0       |
+drugC        |1.0        |1.0       |1.0       |
+drugX        |1.0        |1.0       |1.0       |
+drugY        |1.0        |1.0       |1.0       |
+
+
+d) Accuracy, macro-average F1 and weighted-average F1 of the model
+Accuracy                  : 1.0
+Macro-average F1-score    : 1.0
+Weighted-average F1-score : 1.0
+
+
+
+
+---------------- Top Decision tree Classifier ----------------
+		Best parameters found by GridSearchCv :
+criterion: gini ; max_depth: 4 ; min_samples_split: 2 ; 
+
+b) Confusion matrix
+axis : x-> Predicted labels; y-> True labels
+
+|drA|drB|drC|drX|drY|
+---------------------
+|8  |0  |0  |0  |0  |drA
+|0  |7  |0  |0  |0  |drB
+|0  |0  |4  |0  |0  |drC
+|0  |0  |0  |9  |0  |drX
+|0  |0  |0  |0  |22 |drY
+
+c) Precision, recall, and F1-measure
+
+             | precision |  recall  | f1-score |
+drugA        |1.0        |1.0       |1.0       |
+drugB        |1.0        |1.0       |1.0       |
+drugC        |1.0        |1.0       |1.0       |
+drugX        |1.0        |1.0       |1.0       |
+drugY        |1.0        |1.0       |1.0       |
+
+
+d) Accuracy, macro-average F1 and weighted-average F1 of the model
+Accuracy                  : 1.0
+Macro-average F1-score    : 1.0
+Weighted-average F1-score : 1.0
+
+
+
+
+---------------- Perceptron Classifier ----------------
+
+b) Confusion matrix
+axis : x-> Predicted labels; y-> True labels
+
+|drA|drB|drC|drX|drY|
+---------------------
+|0  |0  |0  |6  |2  |drA
+|0  |0  |0  |7  |0  |drB
+|0  |0  |0  |4  |0  |drC
+|0  |0  |0  |7  |2  |drX
+|0  |0  |0  |9  |13 |drY
+
+c) Precision, recall, and F1-measure
+
+             | precision |  recall  | f1-score |
+drugA        |0.0        |0.0       |0.0       |
+drugB        |0.0        |0.0       |0.0       |
+drugC        |0.0        |0.0       |0.0       |
+drugX        |0.212121   |0.777777  |0.333333  |
+drugY        |0.764705   |0.590909  |0.666666  |
+
+
+d) Accuracy, macro-average F1 and weighted-average F1 of the model
+Accuracy                  : 0.4
+Macro-average F1-score    : 0.2
+Weighted-average F1-score : 0.35333333333333333
+
+
+
+
+---------------- Multi Layer Perceptron Classifier ----------------
+
+b) Confusion matrix
+axis : x-> Predicted labels; y-> True labels
+
+|drA|drB|drC|drX|drY|
+---------------------
+|0  |0  |0  |1  |7  |drA
+|0  |0  |0  |7  |0  |drB
+|0  |0  |0  |2  |2  |drC
+|0  |0  |0  |5  |4  |drX
+|0  |0  |0  |1  |21 |drY
+
+c) Precision, recall, and F1-measure
+
+             | precision |  recall  | f1-score |
+drugA        |0.0        |0.0       |0.0       |
+drugB        |0.0        |0.0       |0.0       |
+drugC        |0.0        |0.0       |0.0       |
+drugX        |0.3125     |0.555555  |0.399999  |
+drugY        |0.617647   |0.954545  |0.75      |
+
+
+d) Accuracy, macro-average F1 and weighted-average F1 of the model
+Accuracy                  : 0.52
+Macro-average F1-score    : 0.22999999999999998
+Weighted-average F1-score : 0.402
+
+
+
+
+---------------- Top Multi Layer Perceptron classifier ----------------
+		Best parameters found by GridSearchCv :
+activation: tanh ; hidden_layer_sizes: (30, 50) ; solver: adam ; 
+
+b) Confusion matrix
+axis : x-> Predicted labels; y-> True labels
+
+|drA|drB|drC|drX|drY|
+---------------------
+|8  |0  |0  |0  |0  |drA
+|4  |3  |0  |0  |0  |drB
+|0  |0  |3  |1  |0  |drC
+|0  |0  |0  |9  |0  |drX
+|0  |0  |0  |0  |22 |drY
+
+c) Precision, recall, and F1-measure
+
+             | precision |  recall  | f1-score |
+drugA        |0.666666   |1.0       |0.8       |
+drugB        |1.0        |0.428571  |0.6       |
+drugC        |1.0        |0.75      |0.857142  |
+drugX        |0.9        |1.0       |0.947368  |
+drugY        |1.0        |1.0       |1.0       |
+
+
+d) Accuracy, macro-average F1 and weighted-average F1 of the model
+Accuracy                  : 0.9
+Macro-average F1-score    : 0.8409022556390978
+Weighted-average F1-score : 0.8910977443609024
+
+
+
+
+Average accuracy, macro-average F1 score and weighted-average F1 score on 10 different runs
+
+        | accuracy | mac-avg F1 | wgh-avg F1 |
+nb      |0.66      |0.589560    |0.646263    |
+base_dt |1.0       |1.0         |1.0         |
+top_dt  |1.0       |1.0         |1.0         |
+per     |0.399999  |0.199999    |0.353333    |
+base_mlp|0.518     |0.228261    |0.401879    |
+top_mlp |0.880000  |0.840591    |0.867487    |
+
+
+Standard deviation accuracy, macro-average F1 score and weighted-average F1 score on 10 different runs
+
+        | accuracy | mac-avg F1 | wgh-avg F1 |
+nb      |0.0       |1.110223    |0.0         |
+base_dt |0.0       |0.0         |0.0         |
+top_dt  |0.0       |0.0         |0.0         |
+per     |5.551115  |2.775557    |5.551115    |
+base_mlp|0.006000  |0.004745    |0.006285    |
+top_mlp |0.054405  |0.111439    |0.067544    |

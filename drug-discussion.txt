@@ -1,0 +1,18 @@
+We can see that the instances are not balanced at all. Indeed, drugY has almost as much instances as the sum of the four other drugs. 
+Hence, we will need to study the weighted metrics to have reliable scores.
+
+From the two last tables, we can clearly see that one model outperforms all the others. Indeed, the basic and the optimized version
+of the decision tree have an accuracy of 100%. The worst model is the perceptron. We can also note that the optimized version
+of the Multiple Layer Perceptron has a good accuracy compared to the basic MLP. A MLP is a neural network. I think it's possible
+to reach an accuracy of 1 with this model, but more datas and other parameters for the GridSearch are needed.
+
+The most interesting fact about this table is that we realize the models don't have the same performances on each runs.
+For example, the Top MLP we run in question 7 has an accuracy of 0.9. And the last study shows that the average accuracy is 0.88.
+In the different tests I made, I realize that every model doesn't give the same performances through different runs.
+This phenomenon is easy to understand for the Perceptron and the MLP model as these two models use weights. The way the weights
+are initialized can maybe make the model converges to a local optimum. Therefore, the model doesn't find the global maximum, and
+the performances vary.
+But I can't really explain why the Naives Bayes Classifier and the Decision Tree don't have the same performances on two runs.
+These two models use direct calculation, there is no randomness in the proccess.
+The only reason I think about is that the data are maybe shuffled before the model fits them. And a certain shuffle can make 
+the model converges to a local optimum.
