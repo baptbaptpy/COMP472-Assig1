@@ -3,6 +3,7 @@ COMP 472 - Artificial Intelligence : Assigment 1
 
 by Baptiste Lemaire, id : 40216482
 
+URL : https://github.com/baptbaptpy/COMP472-Assig1
 
 
 
